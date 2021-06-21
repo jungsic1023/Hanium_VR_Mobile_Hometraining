@@ -10,7 +10,9 @@ https://www.youtube.com/watch?v=BDSto9tyqjM&feature=youtu.be
 >#### 1-2 Arduino IDE에서 Uno보드에 센서들을 연결하여 Unity로 전송하는 코드
 >#### 1-3 Unity에서 Arduino를 블루투스로 받는 방법
 ### 2. Unity 개발 
->#### 2-1 자유로운 맵 주행
+>#### 2-1 로그인 화면
+>### 2-2 메뉴
+>### 2-3 자유로운 맵 주행
 
 
 <hr/>   
@@ -87,7 +89,87 @@ if(state == 0){
 
 # 2. Unity 개발 
 
-### 2-1 자유로운 맵 주행
+### 2-1 로그인 화면
+
+https://youtu.be/r7Q1dTESjkA
+
+![1](https://user-images.githubusercontent.com/62869017/122801645-5afdad80-d2ff-11eb-990b-452e37769daa.png)
+
+![2](https://user-images.githubusercontent.com/62869017/122801686-66e96f80-d2ff-11eb-98f8-8bc0f17bae3e.png)
+
+시간대에 따라 낮배경의 로그인 배경과 밤배경의 로그인 배경이 나온다
+
+### 2-2 메뉴
+
+![menu](https://user-images.githubusercontent.com/62869017/122801868-a2843980-d2ff-11eb-9b01-8d429e3a69aa.png)
+
+로그인을 한 후 메뉴에서 주행하고 싶은 맵을 선택한다. 선택은 모바일 기반 VR이기 때문에
+시선처리를 통한 GazeInput을 사용한다.
+
+```cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.XR;
+using System;
+
+
+public class GazeInput : MonoBehaviour
+{
+    GameObject Currentgaze = null;
+
+   
+
+
+    void Update()
+    {
+       
+
+        RaycastHit hitInfo;
+
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward,
+out hitInfo, 9999f))
+        {
+            if (Currentgaze == null)
+            {
+                hitInfo.collider.SendMessage("OnGazeEnter", SendMessageOptions.DontRequireReceiver);
+               
+                Currentgaze = hitInfo.collider.gameObject; 
+
+                SendMessage("Onhitinfo", hitInfo, SendMessageOptions.DontRequireReceiver);
+            }
+        }
+        else
+        {
+            if (Currentgaze != null) 
+            {
+                Currentgaze.SendMessage("OnGazeExit", SendMessageOptions.DontRequireReceiver);
+              
+                Currentgaze = null;
+            }
+        }
+    }
+    void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(transform.position, transform.position + transform.forward * 1000f);
+       
+    }
+
+
+
+
+
+}
+```
+
+### 2-3 자유로운 맵 주행
+
+![Play](https://user-images.githubusercontent.com/62869017/122802219-132b5600-d300-11eb-9298-6d199846cc2e.png)
+
+각종 센서들을 통하여 맵을 자유롭게 주행할 수 있다.
 
 ```cs
 using System.Collections;
