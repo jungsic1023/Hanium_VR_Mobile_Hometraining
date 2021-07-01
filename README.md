@@ -10,7 +10,7 @@ https://www.youtube.com/watch?v=BDSto9tyqjM&feature=youtu.be
 >#### 1-2 Arduino IDE에서 Uno보드에 센서들을 연결하여 Unity로 전송하는 코드
 >#### 1-3 Unity에서 Arduino를 블루투스로 받는 방법
 ### 2. Unity 개발 
->#### 2-1 로그인 화면
+>### 2-1 로그인 화면
 >### 2-2 메뉴
 >### 2-3 자유로운 맵 주행
 
@@ -89,6 +89,7 @@ if(state == 0){
 
 # 2. Unity 개발 
 
+
 ### 2-1 로그인 화면
 
 https://youtu.be/r7Q1dTESjkA
@@ -98,6 +99,7 @@ https://youtu.be/r7Q1dTESjkA
 ![2](https://user-images.githubusercontent.com/62869017/122801686-66e96f80-d2ff-11eb-98f8-8bc0f17bae3e.png)
 
 시간대에 따라 낮배경의 로그인 배경과 밤배경의 로그인 배경이 나온다
+
 
 ### 2-2 메뉴
 
