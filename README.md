@@ -93,7 +93,7 @@ if(state == 0){
 
 ### :iphone: 2-1 로그인 화면
 
-https://youtu.be/r7Q1dTESjkA
+:link: https://youtu.be/r7Q1dTESjkA
 
 ![1](https://user-images.githubusercontent.com/62869017/122801645-5afdad80-d2ff-11eb-990b-452e37769daa.png)
 
