@@ -1,31 +1,30 @@
 :video_game: 한이음 모바일 기반 홈트레이닝 시스템
 ===================================
 
-:video_camera: https://www.youtube.com/watch?v=BDSto9tyqjM&feature=youtu.be
+### :link: 시연 영상 https://www.youtube.com/watch?v=BDSto9tyqjM&feature=youtu.be
 
-
-### 시스템 구성도
-
+### :clipboard: 시스템 구성도
+![아키텍처123](https://user-images.githubusercontent.com/63203480/124054020-34a4e400-da5c-11eb-8221-423daa2774f5.PNG)
 
 -----
-### 1. 아두이노 블루투스 연결
+### :flags: 아두이노 블루투스 연결
 >#### 1-1 Arduino로 사용하는 센서
 >#### 1-2 Arduino IDE에서 Uno보드에 센서들을 연결하여 Unity로 전송하는 코드
 >#### 1-3 Unity에서 Arduino를 블루투스로 받는 방법
-### 2. Unity 개발 
+### :computer: Unity 개발 
 >#### 2-1 로그인 화면
 >#### 2-2 메뉴
 >#### 2-3 자유로운 맵 주행
 
 <hr/>   
 
-## 1. 아두이노 블루투스 연결
+## :flags: 아두이노 블루투스 연결
 
-### 1-1 Arduino로 사용하는 센서
-1. 자이로 가속도 센서 -> 자전거의 방향제어(좌 우)
-2. 홀 센서 -> 자전거의 브레이크 제어
-3. 적외선 센서 -> 자전거의 속도제어
-4. 블루투스 모듈 -> 센서값 전송
+### :wrench: 1-1 Arduino로 사용하는 센서
+- 자이로 가속도 센서 -> 자전거의 방향제어(좌 우)
+- 홀 센서 -> 자전거의 브레이크 제어
+- 적외선 센서 -> 자전거의 속도제어
+- 블루투스 모듈 -> 센서값 전송
 <hr/>  
 
 ### :memo: 1-2 Arduino IDE에서 Uno보드에 센서들을 연결하여 Unity로 전송하는 코드
@@ -89,10 +88,10 @@ if(state == 0){
 ```
 <hr/>   
 
-# 2. Unity 개발 
+# :computer: Unity 개발 
 
 
-### 2-1 로그인 화면
+### :iphone: 2-1 로그인 화면
 
 https://youtu.be/r7Q1dTESjkA
 
@@ -103,7 +102,7 @@ https://youtu.be/r7Q1dTESjkA
 시간대에 따라 낮배경의 로그인 배경과 밤배경의 로그인 배경이 나온다
 
 
-### 2-2 메뉴
+### :game_die: 2-2 메뉴
 
 ![menu](https://user-images.githubusercontent.com/62869017/122801868-a2843980-d2ff-11eb-9b01-8d429e3a69aa.png)
 
@@ -171,7 +170,8 @@ out hitInfo, 9999f))
 }
 ```
 
-### 2-3 자유로운 맵 주행
+
+### :bicyclist: 2-3 자유로운 맵 주행
 
 ![Play](https://user-images.githubusercontent.com/62869017/122802219-132b5600-d300-11eb-9298-6d199846cc2e.png)
 
