@@ -1,19 +1,21 @@
-한이음 모바일 기반 홈트레이닝 시스템
+:video_game: 한이음 모바일 기반 홈트레이닝 시스템
 ===================================
 
-https://www.youtube.com/watch?v=BDSto9tyqjM&feature=youtu.be
+:video_camera: https://www.youtube.com/watch?v=BDSto9tyqjM&feature=youtu.be
+
+
+### 시스템 구성도
+
 
 -----
-
 ### 1. 아두이노 블루투스 연결
 >#### 1-1 Arduino로 사용하는 센서
 >#### 1-2 Arduino IDE에서 Uno보드에 센서들을 연결하여 Unity로 전송하는 코드
 >#### 1-3 Unity에서 Arduino를 블루투스로 받는 방법
 ### 2. Unity 개발 
->### 2-1 로그인 화면
->### 2-2 메뉴
->### 2-3 자유로운 맵 주행
-
+>#### 2-1 로그인 화면
+>#### 2-2 메뉴
+>#### 2-3 자유로운 맵 주행
 
 <hr/>   
 
@@ -26,7 +28,7 @@ https://www.youtube.com/watch?v=BDSto9tyqjM&feature=youtu.be
 4. 블루투스 모듈 -> 센서값 전송
 <hr/>  
 
-### 1-2 Arduino IDE에서 Uno보드에 센서들을 연결하여 Unity로 전송하는 코드
+### :memo: 1-2 Arduino IDE에서 Uno보드에 센서들을 연결하여 Unity로 전송하는 코드
 
 ```cs
 #include "SoftwareSerial.h"
@@ -108,6 +110,8 @@ https://youtu.be/r7Q1dTESjkA
 로그인을 한 후 메뉴에서 주행하고 싶은 맵을 선택한다. 선택은 모바일 기반 VR이기 때문에
 시선처리를 통한 GazeInput을 사용한다.
 
+
+:memo: Code
 ```cs
 using System.Collections;
 using System.Collections.Generic;
@@ -173,6 +177,7 @@ out hitInfo, 9999f))
 
 각종 센서들을 통하여 맵을 자유롭게 주행할 수 있다.
 
+:memo: Code
 ```cs
 using System.Collections;
 using System.Collections.Generic;
