@@ -9,7 +9,7 @@
 -----
 ### :flags: 아두이노 블루투스 연결
 >#### 1-1 Arduino로 사용하는 센서
->#### 1-2 Arduino IDE에서 Uno보드에 센서들을 연결하여 Unity로 전송하는 코드
+>#### 1-2 Arduino IDE에서 Uno보드에 센서들을 연결하여 Unity로 전송하는 코드.
 ### :computer: Unity 개발 
 >#### 2-1 로그인 화면
 >#### 2-2 메뉴
