@@ -94,6 +94,9 @@ if(state == 0){
 
 :link: https://youtu.be/GCZcMziodU0
 
+![GIF](https://user-images.githubusercontent.com/62869017/126074981-6d9d84d6-ad82-412c-9448-6e92327db49c.gif)
+
+
 ![1](https://user-images.githubusercontent.com/62869017/122801645-5afdad80-d2ff-11eb-990b-452e37769daa.png)
 
 ![2](https://user-images.githubusercontent.com/62869017/122801686-66e96f80-d2ff-11eb-98f8-8bc0f17bae3e.png)
