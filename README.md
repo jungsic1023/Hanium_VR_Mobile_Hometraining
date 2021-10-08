@@ -199,7 +199,7 @@ public class dddfff : MonoBehaviour
     public int q=0;
     public float sp = 0;
     public float turnSpeed = 540f;
-   public int x = 0;
+    public int x = 0;
     public int y = 0;
     BluetoothHelper bluetoothHelper;
     BluetoothHelper bluetoothHelper2;
